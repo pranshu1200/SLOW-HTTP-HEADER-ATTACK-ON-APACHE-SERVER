@@ -46,7 +46,10 @@ Post incomplete HTTP headers regularly after a certain interval of time.The bot 
     Press enter to start the attack 
     
  # Log Info
-    Displays when the connections are opened, the time of sending new set of headers and the when does a timeout occurs.
+    Initial Latency to access web page
+    Displays when the connections are opened
+    The time of sending new set of incomplete headers 
+    The when does a timeout occurs.
     
     
 
