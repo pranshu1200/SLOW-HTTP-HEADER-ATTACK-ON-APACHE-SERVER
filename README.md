@@ -24,11 +24,29 @@ Post incomplete HTTP headers regularly after a certain interval of time.The bot 
     sudo getcap /usr/bin/dumpcap
 
 # Installing SlowHttpTest Tool
-    update repos first:
-        sudo apt-get update
-    Install the tool:
-        sudo apt-get install slowhttptest
+    sudo apt-get update
+    sudo apt-get install slowhttptest
 
 # Submissions
-
+    main.py : The main function to set up attack parameters for the bot
+    target.py : Create a target vector
+    connection.py : Set up the connection to the server under attack and get results
+    wireshark capture.pcapng : The WireShark capture for the attack on a sample web server.
+    COMPUTER AND NETWORK SECURITY – CST 308 REPORT.pdf : Presentation Report on the Attack Bot
+    supplementary document prepared by me.pdf : Supplementary text doc
+    
+ # Usage
+    python3 main.py
+    enter the ip address of server to be attacked 
+    enter the port number
+    enter time to wait before posting next incomplete header is made in seconds(the time between sending consecutive set of         incomplete HTTP headers by connections)
+    enter the number of concurrent connections to make to the server
+    
+    The system shows if the given (ip,port) pair is valid or  not , and if its valid then checks if the server vulnerable to the attack(is it thread based Apache server) and the initial lateny.
+    Press enter to start the attack 
+    
+ # Log Info
+    Displays when the connections are opened, the time of sending new set of headers and the when does a timeout occurs.
+    
+    
 
