@@ -5,14 +5,14 @@ Computer and Network Security course project. A bot to launch typical DOS attack
 Post incomplete HTTP headers regularly after a certain interval of time.The bot creates large number of HTTP connections to the given web server. Since, a thread based web server has a upper limit on the maximum amount of threads it can handle, eventually we will succeed to create a DOS attack and put down the web server or drastically increase the time to access the web page.
 
 # Tools Required
-Python3
-An Apache web server to attack(Thread based server)
-Wireshark
-SlowHttpTest Tool
+    Python3
+    An Apache web server to attack(Thread based server)
+    Wireshark
+    SlowHttpTest Tool
 
 
 # Installing Dependencies:
-pip3 install -r requirements.txt
+    pip3 install -r requirements.txt
 
 # Installing WireShark on Ubuntu:
     sudo apt-get install wireshark
@@ -24,10 +24,10 @@ pip3 install -r requirements.txt
     sudo getcap /usr/bin/dumpcap
 
 # Installing SlowHttpTest Tool
-update repos first
-sudo apt-get update
-Install the tool
-sudo apt-get install slowhttptest
+    update repos first:
+        sudo apt-get update
+    Install the tool:
+        sudo apt-get install slowhttptest
 
 # Submissions
 
